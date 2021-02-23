@@ -130,7 +130,7 @@ const Profile = () => {
         </TouchableOpacity>
       </View>
 
-      <View style={{height: 270, margin: 5, paddingBottom: 20,}}>
+      <View style={{height: 250, margin: 5, paddingBottom: 20,}}>
         {/* <FlatList data={commentData} renderItem={renderUserComment} /> */}
         {loading ? (
           <Text>Loading</Text>
@@ -148,12 +148,13 @@ const Profile = () => {
       </View>
       <View
         style={{
-          height: 60,
-          margin: 5,
+          height: 55,
+          marginLeft: 5,
+          marginRight: 5,
+          marginTop: 10,
           backgroundColor: '#1b5e20',
           flexDirection: 'row',
           marginBottom: 10,
-          marginTop: 20,
           borderRadius: 5,
           elevation: 2
         }}>

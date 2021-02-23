@@ -28,6 +28,8 @@ import {NetworkCheck} from '../components';
 const Home = ({navigation}) => {
   useEffect(() => {
     BackHandler.addEventListener('hardwareBackPress', backAction);
+    return () => BackHandler.removeEventListener('hardwareBackPress', backAction);
+    
   }, []);
 
   const backAction = () => {

@@ -29,7 +29,7 @@ const Setting = (props) => {
   useEffect(() => {
     BackHandler.addEventListener('hardwareBackPress', backAction);
 
-    return () => BackHandler.removeEventListener();
+    return () => BackHandler.removeEventListener('hardwareBackPress', backAction);
 
   }, [])
 
