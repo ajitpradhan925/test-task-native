@@ -1,0 +1,24 @@
+Packages ============>
+
+For navigation=====
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+For Bottom Navigation=====
+npm install @react-navigation/bottom-tabs
+
+
+For react Navigation Stack====
+npm install @react-navigation/stack @react-navigation/native
+
+For Setup vecor icons=====	
+1-npm install --save react-native-vector-icons
+2-
+Edit android/app/build.gradle ( NOT android/build.gradle ) and add the following:
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+3-
+Imports
+import Icon from 'react-native-vector-icons/dist/FontAwesome';
+
+
+Setup Redux, Redux Thunk ======
+1-npm i redux-thunk redux react-redux axios redux-devtools-extension

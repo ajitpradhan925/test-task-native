@@ -1,0 +1,25 @@
+import {createStore, combineReducers, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
+import {composeWithDevTools} from 'redux-devtools-extension';
+import {userDetailsReducer, getAllUsers} from './reducers/userReducer';
+import {commentReducer } from './reducers/commentReducer';
+
+
+const reducer = combineReducers({
+  userDetails: userDetailsReducer,
+  allUsers: getAllUsers,
+  comment: commentReducer,
+
+});
+
+const initialState = {};
+
+const middleware = [thunk];
+
+const store = createStore(
+  reducer,
+  initialState,
+  composeWithDevTools(applyMiddleware(...middleware)),
+);
+
+export default store;
